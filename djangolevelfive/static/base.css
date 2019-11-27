@@ -58,13 +58,60 @@ header {
   color: black;
 }
 
-p {
-  background-color: transparent;
-}
 .extends {
   padding: 40px 10%;
   margin: 0;
   background-color: transparent;
   display: flex;
   justify-content: center;
+}
+
+/* LOGIN_PAGE */
+
+.login-section {
+  text-align: center;
+  padding: 40px 0;
+  box-sizing: border-box;
+}
+
+.login-section h1 {
+  padding-bottom: 40px;
+}
+
+.login-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-section label {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.login-section input {
+  margin-bottom: 40px;
+  color: #252525;
+}
+
+.username,
+.password {
+  outline: none;
+  width: 360px;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 4px 5px;
+}
+
+.login-button {
+  align-self: center;
+  width: 40%;
+  padding: 10px 40px;
+  border: 1px solid black;
+  border-radius: 4px;
+  transition: 0.4s ease;
+}
+
+.login-button:hover {
+  color: white;
+  background-color: #252525;
 }

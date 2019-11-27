@@ -28,7 +28,7 @@ SECRET_KEY = 'o=^i-ktz^cv)x5-o^fs3ksxj281pyt0dr33@p@m5d)k4la2gwd'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['kietteik.pythonanywhere.com']
+ALLOWED_HOSTS = ['kietteik.pythonanywhere.com', '127.0.0.1']
 
 
 # Application definition

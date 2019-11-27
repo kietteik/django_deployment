@@ -1,18 +1,19 @@
 {% extends 'base.html' %}
 {% block body_block %}
 
-<div class="jumbotron">
+<div class="login-section">
     <h1>LOGIN</h1>
-    <h2>Please Login</h2>
     <form action="{% url 'user_password:user_login' %}" method="post">
         {% csrf_token %}
-        <label for="username">Username</label>
-        <input type="text" name="username" placeholder="Enter username">
-
-        <label for="password">Password</label>
-        <input type="password" name="password" id=""> 
-
-        <input type="submit" value="Login">
+        <div class="form">
+            <label for="username">Username</label>
+            <input type="text" name="username"  class="username">
+        </div>
+        <div class="form">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="" class="password"> 
+        </div>
+        <input type="submit" value="Login" class="login-button">
     </form>
 </div>
 {% endblock body_block %}

@@ -17,7 +17,6 @@
                 <li><a href="/admin">ADMIN</a></li>
                 <li><a href="{% url 'index' %}">INDEX</a></li>
                 <li><a href="{% url 'user_password:registration' %}">REGISTER</a></li>
-
                 {% if user.is_authenticated %}
                 <li><a href="{% url 'logout' %}">LOGOUT</a></li>
                 {% else %}
