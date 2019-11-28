@@ -115,3 +115,20 @@ header {
   color: white;
   background-color: #252525;
 }
+
+.register-section {
+  text-align: center;
+  padding: 40px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-section h1 {
+  margin-bottom: 40px;
+  color: #252525;
+}
+.register-section input {
+  margin-bottom: 40px;
+  color: #252525;
+}
