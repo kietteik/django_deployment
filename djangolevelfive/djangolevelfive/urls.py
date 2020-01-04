@@ -19,8 +19,10 @@ from user_password import views
 
 urlpatterns = [
     path('admin/', admin.site.urls, name='admin'),
-    path('', views.index, name='index'),
+    path('', views.base, name='base'),
+    path('index/', views.index, name='index'),
     path('user_password/', include('user_password.urls')),
     path('logout/', views.user_logout, name='logout'),
-    path('special/', views.special, name='special')
+    path('special/', views.special, name='special'),
+    path('colorpicker/', views.colorpicker, name='colorpicker')
 ]

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}    
+{% block head_block %}
+    <link rel="stylesheet" href="/static/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ngay tan</title>
+{% endblock head_block %}
+{% block navbar %}
+{% endblock navbar %}
+{% block body_block %}
+<div class="colorpicker">
+    <div class="text">don't pick your <span 
+    class="color text">color</span></div>
+    <div id="hexcode" class="text">__</div>
+    <button class="change" onclick="randomColor()">change</button>
+    <script type="text/javascript">
+        function randomColor() {
+            var color,symbols;
+            symbols = "0123456789ABCDEF";
+            color = "#";
+            for (var i = 0;i<6;i++){
+                color = color + symbols[Math.floor(Math.random()*16)];
+            }
+            document.body.style.backgroundColor = color;
+            document.getElementById("hexcode").innerHTML = color;
+        }
+    window.onload = randomColor;
+    </script>
+</div>
+{% endblock body_block %}

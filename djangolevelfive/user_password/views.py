@@ -9,8 +9,16 @@ from django.urls import reverse
 from django.contrib.auth.decorators import login_required
 
 
-def index(request):
+def colorpicker(request):
+    return render(request, 'colorpicker.html')
+
+
+def base(request):
     return render(request, 'base.html')
+
+
+def index(request):
+    return render(request, 'index.html')
 
 
 def register(request):

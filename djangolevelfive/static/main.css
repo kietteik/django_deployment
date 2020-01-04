@@ -1,0 +1,33 @@
+.colorpicker {
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 0;
+  background: none;
+  font-size: 14px;
+  margin-top: 300px;
+  text-align: center;
+  color: white;
+}
+#hexcode {
+  margin-top: 2px;
+  font-size: 13px;
+  margin-left: 130px;
+}
+.color {
+  text-decoration: line-through;
+}
+.text {
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 3px;
+  color: white;
+}
+
+.change {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 400px;
+}
