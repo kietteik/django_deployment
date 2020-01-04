@@ -61,7 +61,7 @@ header {
 .extends {
   padding: 40px 10%;
   margin: 0;
-  background-color: transparent;
+  background-color: none;
   display: flex;
   justify-content: center;
 }
